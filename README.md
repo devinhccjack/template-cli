@@ -1,8 +1,7 @@
 ### template-cli
 node cli template
 
-###命令
-
+### 命令
 js-plugin-cli template
 js-plugin-cli -v
 js-plugin-cli update
