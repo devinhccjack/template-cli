@@ -47,7 +47,7 @@ async function dlAction() {
   dlSpinner.start()
   try {
     // 下载模板后解压
-    await download(jsonConfig.mirror + 'template', path.resolve(__dirname, '../template/'), {
+    await download(jsonConfig.mirror + 'template.zip', path.resolve(__dirname, '../template/'), {
       extract: true
     });
   } catch (err) {
