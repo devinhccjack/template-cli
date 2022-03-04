@@ -3,8 +3,11 @@ node cli template
 
 ### 命令
 js-plugin-cli template
+
 js-plugin-cli -v
+
 js-plugin-cli update
+
 js-plugin-cli init projectName
 
 
