@@ -9,3 +9,6 @@ js-plugin-cli init projectName
 js-plugin-cli mirror https://github.com/hechongchong/template-cli/blob/main/
 
 
+
+
+
