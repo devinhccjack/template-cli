@@ -12,6 +12,7 @@ js-plugin-cli init projectName
 
 ## download地址
 js-plugin-cli mirror https://github.com/hechongchong/template-cli/blob/main/
+js-plugin-cli mirror https://github.com/hechongchong/template-cli/tree/main/
 
 
 
