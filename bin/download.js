@@ -55,12 +55,13 @@ async function dlAction() {
     // });
     // 模板文件
     // const template = 'direct:https://github.com/EchoHGX/express-demo.git';
-    const template = 'direct:https://github.com/hechongchong/vue_admin.git';
+    // const template = 'direct:https://github.com/hechongchong/vue_admin.git';
+    const template = 'direct:https://github.com/hechongchong/admin-template.git';
 
     const loading = ora("下载初始化模板中...")
     loading.start()
     // const _projectPath = path.join(process.cwd(),'./')
-    const _projectPaths = path.resolve(__dirname, '../templates/');
+    const _projectPaths = path.resolve(__dirname, '../template/');
     // {clone: true}
     await downloads(template,_projectPaths,{clone: true},err=>{
       loading.stop()

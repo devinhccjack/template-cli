@@ -72,7 +72,6 @@ async function initProject(projectName) {
             `${targetPath}/gulpfile.js`,
             `${targetPath}/test/index.html`,
             `${targetPath}/src/index.js`
-            // `${targetPath}/index.html`,
           ]
 
           if(multiFiles.length > 0){

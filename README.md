@@ -6,7 +6,7 @@ js-plugin-cli template
 
 js-plugin-cli -v
 
-js-plugin-cli update
+js-plugin-cli upgrade
 
 js-plugin-cli init projectName
 
