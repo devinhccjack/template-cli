@@ -22,5 +22,8 @@
     "log-symbols": "^4.1.0",
     "ora": "^5.1.0",
     "update-notifier": "^5.1.0"
+  },
+  "dependencies": {
+    "download-git-repo": "^3.0.2"
   }
 }

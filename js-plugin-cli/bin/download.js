@@ -1,5 +1,8 @@
 // 请求 download 库，用于下载模板
 const download = require('download')
+//下载git库
+const downloads = require('download-git-repo')
+
 // 请求 ora 库，用于实现等待动画
 const ora = require('ora')
 // 请求 chalk 库，用于实现控制台字符样式
@@ -47,9 +50,29 @@ async function dlAction() {
   dlSpinner.start()
   try {
     // 下载模板后解压
-    await download(jsonConfig.mirror + 'template.zip', path.resolve(__dirname, '../template/'), {
-      extract: true
-    });
+    // await download(jsonConfig.mirror + 'template.zip', path.resolve(__dirname, '../template/'), {
+    //   extract: true
+    // });
+    // 模板文件
+    // const template = 'direct:https://github.com/EchoHGX/express-demo.git';
+    const template = 'direct:https://github.com/hechongchong/vue_admin.git';
+
+    const loading = ora("下载初始化模板中...")
+    loading.start()
+    // const _projectPath = path.join(process.cwd(),'./')
+    const _projectPaths = path.resolve(__dirname, '../templates/');
+    // {clone: true}
+    await downloads(template,_projectPaths,{clone: true},err=>{
+      loading.stop()
+      if(err){
+        // console.error(chalk.red('出错了'+err));
+      }else{
+        //将下载下来的模板的package名称替换掉
+        // shell.sed('-i','app',dirname,_projectPath + '/package.json')
+        console.log(chalk.green('项目创建成功'))
+      }
+    })
+
   } catch (err) {
     // 下载失败时提示
     dlSpinner.text = chalk.red(`Download template failed. ${err}`)

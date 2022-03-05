@@ -69,10 +69,10 @@ async function initProject(projectName) {
           // 把要替换的文件准备好
           const multiFiles = [
             `${targetPath}/package.json`,
-            // `${targetPath}/gulpfile.js`,
-            // `${targetPath}/test/index.html`,
-            // `${targetPath}/src/index.js`
-            `${targetPath}/index.html`,
+            `${targetPath}/gulpfile.js`,
+            `${targetPath}/test/index.html`,
+            `${targetPath}/src/index.js`
+            // `${targetPath}/index.html`,
           ]
 
           if(multiFiles.length > 0){
